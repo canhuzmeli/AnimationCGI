@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wextra -Wno-unused -DEIGEN_DONT_ALIGN_STATICALLY -msse2 -O3 -DNDEBUG    CMakeFiles/FOSSSim.dir/TwoDScene.cpp.o CMakeFiles/FOSSSim.dir/ExplicitEuler.cpp.o CMakeFiles/FOSSSim.dir/SimpleGravityForce.cpp.o  -o FOSSSim -rdynamic ../../lib/libFOSSSimT1M1base.a -lGLU -lGL -lSM -lICE -lX11 -lXext -lglut -lpng -lz 

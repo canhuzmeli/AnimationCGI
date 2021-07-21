@@ -1,0 +1,58 @@
+<scene>
+  <duration time="30.0"/>
+  <integrator type="symplectic-euler" dt="0.01"/>
+
+  
+  
+<!--0-->  <particle m="1.0"  px="-2.0" py="16.0" vx="0.0" vy="0.0" fixed="0" radius="0.5"/>
+<!--1-->  <particle m="5.0"  px="0.0" py="14.0" vx="0.0" vy="0.0" fixed="0" radius="1.5"/>
+<!--2-->  <particle m="1.0"  px="2.0" py="16.0" vx="0.0" vy="0.0" fixed="0" radius="0.5"/>
+<!--3-->  <particle m="2.0"  px="0.0" py="10.0" vx="0.0" vy="0.0" fixed="0" radius="1.0"/>
+
+
+  
+
+<!--0-->
+<!--4-->  <particle m="1.0"  px="-10.0" py="8.0" vx="0" vy="0" fixed="0" radius="1.0"/>
+  
+<!--5-->  <particle m="1.0"  px="-10.0" py="16.0" vx="0" vy="0" fixed="1" radius="1.0"/>
+<!--6-->  <particle m="1.0"  px="-30.0" py="16.0" vx="0" vy="0" fixed="1" radius="1.0"/>
+<!--7-->  <particle m="1.0"  px="-30.0" py="-30.0" vx="0" vy="0" fixed="1" radius="1.0"/>
+
+<!--2-->
+<!--8-->  <particle m="1.0"  px="10.0" py="8.0" vx="0" vy="0" fixed="0" radius="1.0"/>
+  
+<!--9-->  <particle m="1.0"  px="10.0" py="16.0" vx="0" vy="0" fixed="1" radius="1.0"/>  
+<!--10-->  <particle m="1.0"  px="30.0" py="16.0" vx="0" vy="0" fixed="1" radius="1.0"/>
+<!--11-->  <particle m="1.0"  px="30.0" py="-30.0" vx="0" vy="0" fixed="1" radius="1.0"/>
+  
+  
+<!--0-->   <edge i="0" j="3" radius="0.2"/>
+<!--1-->   <edge i="1" j="3" radius="0.2"/>
+<!--2-->   <edge i="2" j="3" radius="0.2"/>
+  
+<!--3-->   <edge i="0" j="4" radius="0.2"/> 
+<!--4-->   <edge i="4" j="5" radius="0.2"/> 
+<!--5-->   <edge i="5" j="6" radius="0.5"/> 
+<!--6-->   <edge i="6" j="7" radius="0.5"/> 
+  
+<!--7-->   <edge i="2" j="8" radius="0.2"/> 
+<!--8-->   <edge i="8" j="9" radius="0.2"/> 
+<!--9-->   <edge i="9" j="10" radius="0.5"/> 
+<!--10-->   <edge i="10" j="11" radius="0.5"/> 
+  
+  
+  <springforce edge="0" k="9.0" l0="4.5" b="4.0"/>
+  <springforce edge="1" k="9.0" l0="4" b="4.0"/>
+  <springforce edge="2" k="9.0" l0="4.5" b="4.0"/>
+  
+  <springforce edge="3" k="9.0" l0="11" b="4.0"/>
+  <springforce edge="7" k="9.0" l0="11" b="4.0"/>
+  
+  <springforce edge="4" k="9.0" l0="8" b="4.0"/>
+  <springforce edge="8" k="9.0" l0="8" b="4.0"/>
+
+  <simplegravity fx="0.0" fy="-9.81"/>
+
+  
+</scene>
